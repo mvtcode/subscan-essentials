@@ -1,0 +1,37 @@
+{
+  "Weight": "u64",
+  "CompactAssignments": "CompactAssignmentsLatest",
+  "RefCount": "u32",
+  "Box<<T as Config>::Call>": "Call",
+  "DispatchResult": {
+    "type": "enum",
+    "type_mapping": [
+      [
+        "Ok",
+        "Null"
+      ],
+      [
+        "Error",
+        "DispatchError"
+      ]
+    ]
+  },
+  "TransactionRecoveryId": "U64",
+  "TransactionSignature": {
+    "type": "struct",
+    "type_mapping": [
+      [
+        "v",
+        "TransactionRecoveryId"
+      ],
+      [
+        "r",
+        "H256"
+      ],
+      [
+        "s",
+        "H256"
+      ]
+    ]
+  }
+}
